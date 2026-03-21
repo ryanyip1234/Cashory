@@ -1,16 +1,27 @@
 /* ===== Body ===== */
 body {
-    margin: 0;
-    padding-top: 90px;
-    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(270deg, #ff6a00, #ffee00, #00c9ff);
+    background-size: 600% 600%;
+    animation: gradientMove 8s ease infinite;
+    align-items: center;
+    align-content: center;
     text-align: center;
-    background: linear-gradient(320deg, #eb92be, #ffef78);
-    transition: opacity 0.5s;
+    margin: 13;
+    min-height: 100vh;
 }
 
 body.fade-out {
     opacity: 0;
 }
+
+/* Gradient animation */
+
+  @keyframes gradientMove {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
+
 
 /* ===== Toolbar ===== */
 .toolbar {
